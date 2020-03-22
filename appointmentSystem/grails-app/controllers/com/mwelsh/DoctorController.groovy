@@ -2,5 +2,5 @@ package com.mwelsh
 
 class DoctorController {
 
-    def index() { }
+    static scaffold = Doctor
 }

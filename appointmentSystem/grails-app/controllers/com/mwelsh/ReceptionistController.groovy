@@ -2,5 +2,5 @@ package com.mwelsh
 
 class ReceptionistController {
 
-    def index() { }
+    static scaffold = Receptionist
 }

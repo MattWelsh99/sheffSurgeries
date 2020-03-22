@@ -2,5 +2,5 @@ package com.mwelsh
 
 class PrescriptionController {
 
-    def index() { }
+    static scaffold = Prescription
 }
