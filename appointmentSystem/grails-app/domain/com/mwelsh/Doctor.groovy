@@ -2,22 +2,22 @@ package com.mwelsh
 
 class Doctor {
 
-	String fullName
-	String qualification
+	String doctorName
+	String qualifications
 	String position
 	String doctorEmail
 	String password
 	String doctorOffice
-	long doctorPhone
+	String doctorPhone
 	String bio
 
-	static hasMany = [prescription:Prescription, appointment:Appointment, nurse:Nurse, patient:Patient]
+	static hasMany = [prescription:Prescription, appointment:Appointment, nurse:Nurse, patient:Patient, surgery:Surgery]
 	static belongsTo = [Nurse, Patient]
 
     static constraints = {
 
-	fullName nullable:false, blank:false
-	qualification nullable:false, blank:false
+	doctorName nullable:false, blank:false
+	qualifications nullable:false, blank:false
 	position nullable:false, blank:false
 	doctorEmail nullable:false, blank:false, email:true
 	password nullable:false, blank:false, unique:true

@@ -6,13 +6,13 @@ class Patient {
 	String patientAddress
 	String patientResidence
 	Date patientDob
-	int patientID
+	String patientID
 	Date dateRegistered
-	long patientPhone
+	String patientPhone
 	Appointment theAppointment
 
-	static hasMany = [prescription:Prescription]
-	static belongsTo = [Prescription]	
+	static hasMany = [prescription:Prescription, doctor:Doctor, surgery:Surgery]
+	static belongsTo = [Prescription, Doctor, Surgery]	
 
     static constraints = {
 
@@ -23,6 +23,7 @@ class Patient {
 	patientID blank:false, nullable:false
 	dateRegistered blank:false, nullable:false
 	patientPhone blank:false, nullable:false
+	theAppointment blank:true, nullable:true
 
 
     }

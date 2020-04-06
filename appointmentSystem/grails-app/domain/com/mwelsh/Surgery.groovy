@@ -6,7 +6,7 @@ class Surgery {
 	String name
 	String address
 	String postcode
-	long telephone
+	String telephone
 	int numberOfPatients
 	String description
 	String openingTime

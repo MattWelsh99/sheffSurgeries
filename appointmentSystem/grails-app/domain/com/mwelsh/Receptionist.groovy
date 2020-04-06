@@ -6,7 +6,7 @@ class Receptionist {
 	String recepEmail
 	String recepUsername
 	String recepPassword
-	long recepPhone
+	String recepPhone
 
     static constraints = {
 

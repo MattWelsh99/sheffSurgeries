@@ -4,9 +4,11 @@ class Appointment {
 
 	Date appDate
 	String appTime
-	int appDuration
+	String appDuration
 	String roomNumber
-	Patient thePatient
+
+	static hasMany = [surgery:Surgery, doctor:Doctor]
+	static belongsTo = [Surgery, Patient]
 
     static constraints = {
 
