@@ -3,13 +3,20 @@ package com.mwelsh
 class Prescription {
 
 	String pharmacyName
-	long prescripNumber
+	int prescripNumber
 	String medicine
 	String totalCost
 	Date dateIssued
 	Boolean patientPaying
 
-	static hasMany = [doctor:Doctor, patient:Patient, surgery:Surgery]
+	Doctor doctor
+	Patient patient
+
+	String toString(){
+	return medicine
+	}
+
+	static belongsTo = [Doctor]
 
     static constraints = {
 
