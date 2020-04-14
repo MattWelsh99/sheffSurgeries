@@ -5,7 +5,7 @@ class BootStrap {
     def init = { servletContext ->
 
 
-def CityHealthCentre = new com.mwelsh.Surgery(
+/* def CityHealthCentre = new com.mwelsh.Surgery(
 name:'City Health Centre', address:'21 Marble Street, Sheffield', postcode:'S11 5TY', telephone:'0114555555', numberOfPatients:'50', description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', openingTime:'09:00-17:00hrs').save()
 
 def HallamHealth = new com.mwelsh.Surgery(
@@ -67,7 +67,7 @@ DrHill.addToPatients(TomRivers)
 DrHill.addToPatients(JakeWright)
 DrMacdonald.addToPatients(TomRivers)
 
-DrHill.addToPrescriptions(CityCentrePharmacy)
+DrHill.addToPrescriptions(CityCentrePharmacy) */
 
 
     }
