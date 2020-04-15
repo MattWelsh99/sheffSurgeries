@@ -20,7 +20,10 @@
 
 	<div class ="row">
 		<asset:image src="banner.jpg"/>
+		<h3>Receptionist Login:</h3><g:loginToggle/>
+		<h3>Doctor Login:</h3><g:doctorloginToggle/>
 	</div>
+
 
 <g:layoutBody/>
 
