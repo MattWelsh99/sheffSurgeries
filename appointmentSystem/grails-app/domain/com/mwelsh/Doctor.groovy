@@ -25,10 +25,10 @@ class Doctor {
 	fullName nullable:false, blank:false
 	qualifications nullable:false, blank:false
 	position nullable:false, blank:false
-	doctorEmail nullable:false, blank:false, email:true
-	password nullable:false, blank:false, unique:true
+	doctorEmail nullable:false, blank:false, email:true, unique:true
+	password nullable:false, blank:false
 	doctorOffice nullable:false, blank:false
 	doctorPhone nullable:false, blank:false
-	bio nullable:false, blank:false, widget:'textarea'
+	bio nullable:false, blank:false, widget:'textarea', maxSize:5000
     }
 }

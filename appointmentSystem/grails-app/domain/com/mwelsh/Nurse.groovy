@@ -21,7 +21,7 @@ class Nurse {
 
 	nurseName nullable:false, blank:false
 	qualifications nullable:false, blank:false
-	nurseEmail nullable:false, blank:false, email:true
+	nurseEmail nullable:false, blank:false, email:true, unique:true
 	nurseOffice nullable:false, blank:false
 	nursePhone nullable:false, blank:false
 	
