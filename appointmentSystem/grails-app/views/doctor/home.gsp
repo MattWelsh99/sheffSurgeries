@@ -52,6 +52,19 @@
 </div>
 
 </div>
+
+
+<div class ="row">
+<div class="first">
+
+	<h3> Search for a Prescription </h3>
+	<p> </p>
+
+	<button type ="button" class="btn btn-link">
+	<g:link controller="doctor" action="advSearch">Search for a Prescription</g:link>
+	</button>
+</div>
+
 </div>
 </body>
 </html>
